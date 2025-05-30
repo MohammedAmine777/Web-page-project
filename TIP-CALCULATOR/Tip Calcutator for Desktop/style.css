@@ -1,0 +1,227 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Space Mono;
+  background-color: hsl(185, 41%, 84%);
+  /* text-align: center; */
+  padding: 20px;
+  padding-top: 90px;
+}
+img{
+  position: absolute;
+  top: 10px; 
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+
+}
+.calculator {
+  display: flex;
+  /* align-items: start; */
+}
+.container {
+  max-width: 75%;
+  background: white;
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+input {
+  width: 470px;
+  padding: 12px;
+
+  background-color: hsl(185, 41%, 84%);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 24px;
+  color: hsl(183, 100%, 15%);
+  text-align: right;
+}
+#bill {
+  background-image: url(/images/icon-dollar.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-position-x: 3%;
+}
+#bill::placeholder {
+  text-align: right;
+  color: gray;
+  opacity: 0.7;
+  font-size: 24px;
+  font-weight: bold;
+}
+#bill:focus {
+  outline: none;
+  border: 3px solid #76c7c0;
+}
+
+#people {
+  background-image: url(/images/icon-person.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-position-x: 3%;
+}
+#people::placeholder {
+  text-align: right;
+  color: gray;
+  opacity: 0.7;
+  font-size: 24px;
+  font-weight: bold;
+}
+#people:focus {
+  outline: none;
+  border: 3px solid #76c7c0;
+}
+.input-section {
+  width: 500px;
+  padding: 10px;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  gap: 15px;
+}
+.tip-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2;
+}
+
+/* .con1{
+    display: flex;
+}
+.con2{
+    display: flex;
+} */
+.tip-buttons button {
+  background-color: hsl(183, 100%, 15%);
+  font-size: 24px;
+  /* width: 150px; */
+  font-weight: bold;
+  color: white;
+}
+.tip-btn,
+#custom-tip {
+  width: 150px;
+  padding: 15px;
+  margin: 5px;
+  font-size: medium;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+}
+#custom-tip:focus {
+  outline: none;
+  border: 3px solid #76c7c0;
+}
+.tip-btn:hover {
+  background: #76c7c0;
+  color: hsl(183, 100%, 15%);
+}
+.output-section {
+  background: #004d40;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.output-section button {
+  margin-top: 500px;
+  background: #76c7c0;
+  width: 400px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: hsl(183, 100%, 15%);
+  margin-top: 200px;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+}
+.amouttt {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+span {
+  font-size: 250%;
+  color: #76c7c0;
+  font-weight: 700;
+}
+#per {
+  color: gray;
+  font-size: small;
+}
+
+
+@media (max-width: 750px) {
+  .calculator{
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    width: 60%;
+  }
+  .input-section {
+    width: 300px;
+    padding: 5px;
+    gap: 8px;
+  }
+  .input-section label {
+    font-size: small;
+  }
+  .input-section input {
+    width: 250px;
+    padding: 6px;
+  }
+  .tip-buttons button {
+    background-color: hsl(183, 100%, 15%);
+    font-size: 12px;
+    width: 80px;
+    font-weight: bold;
+    color: white;
+    
+  }
+  #custom-tip {
+    width: 90px;
+    font-size: 12px;
+  }
+  .output-section {
+    margin-top: 10px;
+    padding: 12px;
+  }
+  .output-section button {
+    margin-top: 90px;
+    width: 200px;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    
+  }
+  span {
+    font-size: 125%;
+
+  }
+  #per {
+    font-size: x-small;
+  }
+  #ta{
+    font-size: small;
+  }
+  .amouttt{
+    gap: 5px;
+  }
+}

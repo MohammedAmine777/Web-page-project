@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Space Mono;
+  background-color: hsl(185, 41%, 84%);
+
+  padding: 20px;
+  padding-top: 100px;
+}
+img{
+  position: absolute;
+  top: 15px; 
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+
+}
+.calculator {
+  display: flex;
+  flex-direction: column;
+
+}
+.container {
+  max-width: 70%;
+  background: white;
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+input {
+  width: 250px;
+  padding: 3px;
+
+  background-color: hsl(185, 41%, 84%);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 24px;
+  color: hsl(183, 100%, 15%);
+  text-align: right;
+}
+#bill {
+  background-image: url(/images/icon-dollar.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-position-x: 3%;
+}
+#bill::placeholder {
+  text-align: right;
+  color: gray;
+  opacity: 0.7;
+  font-size: 24px;
+  font-weight: bold;
+}
+#bill:focus {
+  outline: none;
+  border: 3px solid #76c7c0;
+}
+
+#people {
+  background-image: url(/images/icon-person.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-position-x: 3%;
+}
+#people::placeholder {
+  text-align: right;
+  color: gray;
+  opacity: 0.7;
+  font-size: 24px;
+  font-weight: bold;
+}
+#people:focus {
+  outline: none;
+  border: 3px solid #76c7c0;
+}
+.input-section {
+  width: 250px;
+  padding: 5px;
+  
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  gap: 7px;
+}
+.tip-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2;
+}
+
+
+.tip-buttons button {
+  background-color: hsl(183, 100%, 15%);
+  font-size: 20px;
+  /* width: 150px; */
+  font-weight: bold;
+  color: white;
+}
+.tip-btn,
+#custom-tip {
+  width: 70px;
+  padding: 15px;
+  margin: 5px;
+  font-size: medium;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+}
+#custom-tip:focus {
+  outline: none;
+  border: 3px solid #76c7c0;
+}
+.tip-btn:hover {
+  background: #76c7c0;
+  color: hsl(183, 100%, 15%);
+}
+.output-section {
+  background: #004d40;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.output-section button {
+  margin-top: 250px;
+  background: #76c7c0;
+  width: 230px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: hsl(183, 100%, 15%);
+  margin-top: 200px;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+}
+.amouttt {
+  display: flex;
+  justify-content: space-between;
+  gap: 2px;
+}
+span {
+  font-size: 250%;
+  color: #76c7c0;
+  font-weight: 700;
+}
+
+#per {
+  font-size: x-small;
+  color: gray;
+
+}
+#ta{
+  font-size: x-small;
+}
+.amouttt{
+  gap: 2.5px;
+}
+
